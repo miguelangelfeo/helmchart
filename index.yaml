@@ -6,7 +6,7 @@ entries:
     created: "2025-02-22T18:11:28.1024994-05:00"
     description: A Helm chart for Kubernetes
     digest: acfe1a543b264a1dbd20ce1e9975797adeff6a005c7fc41b9b18ec14c69ee6cd
-    name: appchart
+    name: apichart
     type: application
     urls:
     - https://miguelangelfeo.github.io/helmchart/charts/appchart-0.1.0.tgz
