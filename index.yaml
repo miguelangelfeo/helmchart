@@ -9,6 +9,6 @@ entries:
     name: apichart
     type: application
     urls:
-    - https://miguelangelfeo.github.io/helmchart/charts/apichart-0.1.0.tgz
+    - https://miguelangelfeo.github.io/helmchart/apichart/apichart-0.1.0.tgz
     version: 0.1.0
 generated: "2025-02-22T18:11:28.1008383-05:00"
