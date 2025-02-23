@@ -1,6 +1,6 @@
 namespace: default
-nameOverride: backend-chart 
-deploymentName: backend-chart-deployment
+nameOverride: backend
+deploymentName: backend
 
 replicaCount: 1
 image:
