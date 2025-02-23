@@ -35,6 +35,6 @@ ingress:
   hosts:
     - host: ""
       paths:
-        - path: /backend
+        - path: /
           pathType: Prefix
   tls: []
