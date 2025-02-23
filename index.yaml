@@ -1,14 +1,14 @@
 apiVersion: v1
 entries:
-  appchart:
+  apichart:
   - apiVersion: v2
-    appVersion: 1.2.0
-    created: "2025-02-22T18:11:28.1024994-05:00"
+    appVersion: 1.16.0
+    created: "2025-02-22T22:49:02.9804436-05:00"
     description: A Helm chart for Kubernetes
-    digest: acfe1a543b264a1dbd20ce1e9975797adeff6a005c7fc41b9b18ec14c69ee6cd
+    digest: 4ff5dc5925de9a1a1a354784e6b8fb1c06830372f195c6bb639a2ac18e7af9a4
     name: apichart
     type: application
     urls:
-    - https://miguelangelfeo.github.io/helmchart/charts/apichart-0.1.0.tgz
+    - charts/apichart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-22T18:11:28.1008383-05:00"
+generated: "2025-02-22T22:49:02.9779122-05:00"
