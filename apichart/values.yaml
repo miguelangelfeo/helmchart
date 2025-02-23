@@ -5,7 +5,7 @@ deploymentName: backend-chart-deployment
 replicaCount: 1
 image:
   repository: miguelfeo/kubernetesback
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   tag: "1.2"
 
 service:
