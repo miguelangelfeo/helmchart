@@ -6,7 +6,7 @@ replicaCount: 1
 image:
   repository: miguelfeo/kubernetesback
   pullPolicy: Always
-  tag: "1.2"
+  tag: "latest"
 
 service:
   type: ClusterIP
