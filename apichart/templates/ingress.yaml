@@ -12,9 +12,9 @@ spec:
   rules:
     - http:
         paths:
-          {{- range .Values.ingress.paths }}
-          - path: {{ .path }}
-            pathType: {{ .pathType }}
+          {{- range $path := .Values.ingress.paths }}
+          - path: {{ $path.path }}
+            pathType: {{ $path.pathType }}
             backend:
               service:
                 name: {{ $.Values.nameOverride | default $.Chart.Name }}
