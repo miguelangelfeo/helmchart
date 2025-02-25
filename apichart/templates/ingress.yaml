@@ -8,14 +8,16 @@ metadata:
     {{- toYaml .Values.ingress.annotations | nindent 4 }}
     {{- end }}
 spec:
-  ingressClassName: nginx
+  ingressClassName: {{ .Values.ingress.className }}
   rules:
     - http:
         paths:
-          - path: /
-            pathType: Prefix
+          {{- range .Values.ingress.paths }}
+          - path: {{ .path }}
+            pathType: {{ .pathType }}
             backend:
               service:
                 name: {{ $.Values.nameOverride | default $.Chart.Name }}
                 port:
                   number: {{ $.Values.service.port }}
+          {{- end }}
