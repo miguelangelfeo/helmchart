@@ -1,14 +1,13 @@
-#Este archivo gobierna las replicas sobre el yaml de deployment
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: back-hpa
+  name: backend-hpa
   namespace: {{ .Values.namespace | default "default" }} 
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: backend-chart-deployment 
+    name: backend-deployment  # Este debe coincidir con el nombre real
   minReplicas: {{ .Values.hpa.minReplicas }}
   maxReplicas: {{ .Values.hpa.maxReplicas }}
   metrics:
@@ -18,4 +17,3 @@ spec:
       target:
         type: Utilization
         averageUtilization: {{ .Values.hpa.CPUUtilizationPercentage }}
-    
