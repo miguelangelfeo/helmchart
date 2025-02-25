@@ -33,6 +33,6 @@ ingress:
     nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/cors-allow-origin: "*"
   paths:
-    - path: /
+    - path: /backend
       pathType: Prefix
   tls: []
