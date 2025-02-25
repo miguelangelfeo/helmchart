@@ -10,5 +10,5 @@ entries:
     type: application
     urls:
     - charts/apichart-0.1.0.tgz
-    version: 0.1.0
+    version: "*"
 generated: "2025-02-22T22:49:02.9779122-05:00"
